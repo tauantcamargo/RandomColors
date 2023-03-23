@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aar-Me-TW2">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ColorCell" id="mUK-HC-CWQ">
@@ -38,9 +38,8 @@
                         <viewLayoutGuide key="safeArea" id="aFH-ef-tE1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="aFH-ef-tE1" firstAttribute="bottom" secondItem="aar-Me-TW2" secondAttribute="bottom" id="VQi-zu-yh8"/>
+                            <constraint firstAttribute="bottom" secondItem="aar-Me-TW2" secondAttribute="bottom" id="eLO-44-c1s"/>
                             <constraint firstItem="aar-Me-TW2" firstAttribute="leading" secondItem="aFH-ef-tE1" secondAttribute="leading" id="eZV-44-5Xd"/>
-                            <constraint firstAttribute="bottom" secondItem="aar-Me-TW2" secondAttribute="bottom" constant="34" id="feG-yq-DPn"/>
                             <constraint firstItem="aFH-ef-tE1" firstAttribute="trailing" secondItem="aar-Me-TW2" secondAttribute="trailing" id="lgk-pM-e30"/>
                             <constraint firstItem="aar-Me-TW2" firstAttribute="top" secondItem="aFH-ef-tE1" secondAttribute="top" id="uji-v6-z2T"/>
                         </constraints>
