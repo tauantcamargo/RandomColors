@@ -16,21 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tee-UT-HIC">
-                                <rect key="frame" x="164" y="409" width="65" height="34"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Color"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aar-Me-TW2">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="mUK-HC-CWQ">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mUK-HC-CWQ" id="ODZ-Ws-0bE">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <action selector="tempButtonTapped:" destination="Hfn-Ts-AY6" eventType="touchUpInside" id="hIJ-IW-YUP"/>
+                                    <outlet property="dataSource" destination="Hfn-Ts-AY6" id="GDA-KQ-Nwh"/>
+                                    <outlet property="delegate" destination="Hfn-Ts-AY6" id="LHh-IP-ABy"/>
                                 </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aFH-ef-tE1"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Tee-UT-HIC" firstAttribute="centerX" secondItem="ZqS-yY-SS1" secondAttribute="centerX" id="cEo-mM-Xq7"/>
-                            <constraint firstItem="Tee-UT-HIC" firstAttribute="centerY" secondItem="ZqS-yY-SS1" secondAttribute="centerY" id="yl0-bz-3A0"/>
+                            <constraint firstItem="aFH-ef-tE1" firstAttribute="bottom" secondItem="aar-Me-TW2" secondAttribute="bottom" id="VQi-zu-yh8"/>
+                            <constraint firstItem="aar-Me-TW2" firstAttribute="leading" secondItem="aFH-ef-tE1" secondAttribute="leading" id="eZV-44-5Xd"/>
+                            <constraint firstAttribute="bottom" secondItem="aar-Me-TW2" secondAttribute="bottom" constant="34" id="feG-yq-DPn"/>
+                            <constraint firstItem="aFH-ef-tE1" firstAttribute="trailing" secondItem="aar-Me-TW2" secondAttribute="trailing" id="lgk-pM-e30"/>
+                            <constraint firstItem="aar-Me-TW2" firstAttribute="top" secondItem="aFH-ef-tE1" secondAttribute="top" id="uji-v6-z2T"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Colors" id="eDv-zx-g01"/>
@@ -80,9 +92,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
